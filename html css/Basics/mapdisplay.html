@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="go">my data</p>
+    <script>
+        
+/*const studentdata =[
+
+{ id:1, name:"Rohit", degree:"MCA"},
+{ id:2, name:"Atul", degree:"BCA"},
+{ id:3, name:"Nikhil", degree:"MSC"},
+{ id:4, name:"Bunty", degree:"MBA"},
+{ id:5, name:"Kholi", degree:"MCA"},
+
+];
+
+const newdata =studentdata.map((cvalue)=>{
+return`My name is ${cvalue.name}. My highest Degree is ${cvalue.degree}.`;
+});*/
+
+let myarr =[10,20,30,40];
+
+let avg = myarr.reduce((accu,curr,index,arr)=>{
+      debugger;
+        let result = accu += curr;
+        if (index ===myarr.length-1){
+         return result/myarr.length;
+        }
+            return result;
+});
+console.log(avg);
+
+
+document.getElementById("go").innerHTML= avg;
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
